@@ -1,6 +1,6 @@
 # CrushBrito
 
-Bienvenue dans le dépôt de **CrushBrito**, un projet qui explore et met en œuvre des fonctionnalités en lien avec [ajouter le contexte du projet, par exemple, le but ou le thème principal].
+Bienvenue dans le dépôt de **CrushBrito**, un réseau social pour école
 
 ## Table des Matières
 
