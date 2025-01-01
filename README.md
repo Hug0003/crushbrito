@@ -9,9 +9,6 @@ Bienvenue dans le dépôt de **CrushBrito**, un projet qui explore et met en œu
 - [Technologies utilisées](#technologies-utilisées)
 - [Prérequis](#prérequis)
 - [Installation](#installation)
-- [Utilisation](#utilisation)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
 
 ## À propos
 
