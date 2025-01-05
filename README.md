@@ -4,8 +4,8 @@ Réseau social axé sur la communication. Pour mon lycée, pour se rencontrer pl
 
 ## 🎥 Démo Visuelle
 ![Capture d'écran 2025-01-05 1](https://github.com/user-attachments/assets/b67dba6c-e5c4-47d1-8212-a65df37ca140)
-![Capture d'écran 2![Capture d'écran 2025-01-05 3](https://github.com/user-attachments/assets/a90e5fd8-6921-469d-bd20-6f838b69e760)
-025-01-05 2](https://github.com/user-attachments/assets/d7653f56-4702-489b-89f9-75d98382a665)
+![Capture d'écran 2025-01-05 3](https://github.com/user-attachments/assets/a90e5fd8-6921-469d-bd20-6f838b69e760)
+![Capture d'écran 2025-01-05 3](https://github.com/user-attachments/assets/00142dae-b87a-4bf3-abac-142745c6bb72)
 
 
 ## ✨ Fonctionnalités
