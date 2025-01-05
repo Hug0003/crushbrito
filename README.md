@@ -1,42 +1,75 @@
-# CrushBrito
+# Crushbrito
+## 📄 Description
+Réseau social axé sur la communication. Pour mon lycée, pour que se rencontre plus simplement et pour qu'il puisse communiquer sur cette platforme
 
-Bienvenue dans le dépôt de **CrushBrito**, un réseau social pour école
+## 🎥 Démo Visuelle
 
-## Table des Matières
 
-- [À propos](#à-propos)
-- [Fonctionnalités](#fonctionnalités)
-- [Technologies utilisées](#technologies-utilisées)
-- [Prérequis](#prérequis)
-- [Installation](#installation)
+## ✨ Fonctionnalités
 
-## À propos
+- [x] Fonctionnalité 1  
+- [x] Fonctionnalité 2  
+- [ ] Fonctionnalité à venir  
 
-**CrushBrito** est un projet développé dans le cadre d'un reseau social pour mon lycée Jean Brito. Afin de rencontrer les personnes de l'établissement plus simplement.
 
-## Fonctionnalités
+## 🚀 Installation
 
-- **[Fonctionnalité principale 1]** : Avoir un feed de toutes les personnes inscrite sur le reseau social pour les rencontrer.
-- **[Fonctionnalité principale 2]** : Messagerie privé entre chaque personne avec un onglet qui repertories tous les messageries et une messagerie global avec toutes les personnes inscrites.
-- **[Autres fonctionnalités]** : L'établissement peut ajouter des actualités sur une page dédiée, une page profil de l'utilisateur et un option de connexion, d'inscription ou de déconnexion
+### Prérequis
+- Liste des dépendances (Node.js, Python, etc.)
+- Instructions pour les installer.
 
-## Technologies utilisées
+### Étapes d'installation
 
-- **Python** : Langage principal pour le développement.
-- **[Autres frameworks ou bibliothèques]** : **Django** pour le backend gestion utilisateur, **Pillow** pour la gestion des images.
+# Clonez le projet
+git clone https://github.com/utilisateur/projet.git
 
-## Prérequis
+# Accédez au répertoire
+cd projet
 
-Assurez-vous d’avoir les éléments suivants installés :
+# Installez les dépendances
+npm install  # ou pip install -r requirements.txt
 
-- Python dernière version
-- Django et Pillow
+# Lancez le projet
+npm start  # ou python app.py
 
-## Installation
 
-1. Clonez ce dépôt sur votre machine locale :
-   git clone https://github.com/Hug0003/crushbrito.git
+## 📚 Usage
 
-2. Lancer le projet
-   se mettre dans osculte et taper "python manage.py runserver"
+Expliquez comment utiliser le projet après installation.  
+Inclure des exemples de commandes ou captures d’écran.
+
+
+
+## 👥 Contributeurs
+
+- moi : - moi : [@monprofil](https://github.com/Hug0003)  
+
+### Contribuer
+Les pull requests sont les bienvenues. Pour les changements majeurs, ouvrez une issue d'abord pour discuter de ce que vous souhaitez changer.  
+
+
+
+## ✅ Tests
+
+Instructions pour lancer les tests si le projet en contient :  
+
+
+# Lancer les tests
+npm test  # ou pytest
+
+
+
+## 🛠️ Technologies Utilisées
+
+- Technologie 1  
+- Technologie 2  
+- Technologie 3  
+
+
+
+## 📬 Contact
+
+Pour toute question, contactez-moi :  
+- GitHub : [@monprofil](https://github.com/Hug0003)  
+- E-mail : hugomeuriel@gmail.com
 
