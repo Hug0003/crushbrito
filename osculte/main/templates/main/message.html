@@ -56,7 +56,7 @@
 <div>
     <form method="POST" class="ecrire">
         {% csrf_token %}
-        <textarea class="message" type="text" name="bio"  placeholder="message"></textarea>
+        <textarea class="message" type="text" name="bio" placeholder="message" style="resize: none;"></textarea>
         <button class="valider" type="submit" name="valider"><span class="material-symbols-outlined" style="color: rgb(255, 255, 255);">send</span></button>
     </form>
 </div>
