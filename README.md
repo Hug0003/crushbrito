@@ -1,75 +1,58 @@
 # Crushbrito
 ## 📄 Description
-Réseau social axé sur la communication. Pour mon lycée, pour que se rencontre plus simplement et pour qu'il puisse communiquer sur cette platforme
+Réseau social axé sur la communication. Pour mon lycée, pour se rencontrer plus simplement et pour qu'ils puissent communiquer sur cette platforme
 
 ## 🎥 Démo Visuelle
+![Capture d'écran 2025-01-05 1](https://github.com/user-attachments/assets/b67dba6c-e5c4-47d1-8212-a65df37ca140)
+![Capture d'écran 2![Capture d'écran 2025-01-05 3](https://github.com/user-attachments/assets/a90e5fd8-6921-469d-bd20-6f838b69e760)
+025-01-05 2](https://github.com/user-attachments/assets/d7653f56-4702-489b-89f9-75d98382a665)
 
 
 ## ✨ Fonctionnalités
-
-- [x] Fonctionnalité 1  
-- [x] Fonctionnalité 2  
-- [ ] Fonctionnalité à venir  
+- [x] Connexion / inscription ( nom, mdp, age, confirmation mdp, classe, photo de profile, son instagram / déconnexion / suppression 
+- [x] feed d'actualité avec tous les profils des personnes inscrites 
+- [x] page profil
+- [x] messagerie global avec toutes les personnes inscrites
+- [x] actualité du jour ( admin mettent les infos )
+- [x] boite de messagrie avec toutes les conversations
+- [x] messagerie privée
+- [x] suppression de vos propres messages 
 
 
 ## 🚀 Installation
-
 ### Prérequis
-- Liste des dépendances (Node.js, Python, etc.)
-- Instructions pour les installer.
-
-### Étapes d'installation
+-Installer python et django et pillow
+pip install django
+pip install pillow
 
 # Clonez le projet
-git clone https://github.com/utilisateur/projet.git
+git clone https://github.com/Hug0003/crushbrito.git
 
 # Accédez au répertoire
-cd projet
-
-# Installez les dépendances
-npm install  # ou pip install -r requirements.txt
+cd osculte ( le global )
 
 # Lancez le projet
-npm start  # ou python app.py
-
+python manage.py runserver
 
 ## 📚 Usage
-
-Expliquez comment utiliser le projet après installation.  
-Inclure des exemples de commandes ou captures d’écran.
-
-
+Créer un compte puis explorez les différentes rubriques ( profil, feed, actualité, messagerie global, boite de reception et vos messages privées
 
 ## 👥 Contributeurs
-
 - moi : - moi : [@monprofil](https://github.com/Hug0003)  
 
 ### Contribuer
 Les pull requests sont les bienvenues. Pour les changements majeurs, ouvrez une issue d'abord pour discuter de ce que vous souhaitez changer.  
 
-
-
-## ✅ Tests
-
-Instructions pour lancer les tests si le projet en contient :  
-
-
-# Lancer les tests
-npm test  # ou pytest
-
-
-
 ## 🛠️ Technologies Utilisées
-
-- Technologie 1  
-- Technologie 2  
-- Technologie 3  
-
-
+- python ( django )
+- pillow
+- HTML CSS JS  
 
 ## 📬 Contact
 
 Pour toute question, contactez-moi :  
 - GitHub : [@monprofil](https://github.com/Hug0003)  
 - E-mail : hugomeuriel@gmail.com
+
+  [@monprofil](https://github.com/Hug0003)  / 2022
 
