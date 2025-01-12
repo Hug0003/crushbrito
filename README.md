@@ -1,7 +1,6 @@
 # Crushbrito
 ## 📄 Description
-Réseau social axé sur la communication. Pour mon lycée, pour se rencontrer plus simplement et pour qu'ils puissent communiquer sur cette platforme
-
+Un réseau social centré sur la communication, spécialement conçu pour mon lycée. Il permettrait aux élèves de se rencontrer plus facilement et de faciliter les échanges au sein de la communauté scolaire via cette plateforme.
 ## 🎥 Démo Visuelle
 ![Capture d'écran 2025-01-05 1](https://github.com/user-attachments/assets/b67dba6c-e5c4-47d1-8212-a65df37ca140)
 ![Capture d'écran 2025-01-05 2](https://github.com/user-attachments/assets/090515c9-4491-4741-8e7c-53f4b1e8f7ba)
@@ -9,10 +8,10 @@ Réseau social axé sur la communication. Pour mon lycée, pour se rencontrer pl
 
 
 ## ✨ Fonctionnalités
-- [x] Connexion / inscription ( nom, mdp, age, confirmation mdp, classe, photo de profile, son instagram / déconnexion / suppression 
+- [x] Connexion / inscription ( nom, mdp, age, confirmation mdp, classe, photo de profil, son instagram / déconnexion / suppression 
 - [x] feed d'actualité avec tous les profils des personnes inscrites 
 - [x] page profil
-- [x] messagerie global avec toutes les personnes inscrites
+- [x] messagerie globale avec toutes les personnes inscrites
 - [x] actualité du jour ( admin mettent les infos )
 - [x] boite de messagrie avec toutes les conversations
 - [x] messagerie privée
@@ -35,7 +34,7 @@ cd osculte ( le global )
 python manage.py runserver
 
 ## 📚 Usage
-Créer un compte puis explorez les différentes rubriques ( profil, feed, actualité, messagerie global, boite de reception et vos messages privées
+Créer un compte puis explorer les différentes rubriques ( profil, feed, actualité, messagerie globale, boite de reception et vos messages privées )
 
 ## 👥 Contributeurs
 - moi : - moi : [@monprofil](https://github.com/Hug0003)  
