@@ -40,7 +40,11 @@
         {% if message.user.username == user.username %}
             <div class="message_user">
                 <p class="message_user"><span class="nom" >{{message.user.username}} ({{ message.created_at}}):</span><br>{{ message.bio }}<br>
-                    <a class="delete_" href="{% url 'delete_message' message.pk %}">supprimer</a></p>
+                    </p>
+                <form method="post" action="{% url 'delete_message' message.pk %}">
+                    {% csrf_token %}
+                    <button class="delete_" type="submit" style="background:none;border:0;padding:0;font:inherit;cursor:pointer">supprimer</button>
+                </form>
             </div>
         {% else %}
         <div class="message_autre">

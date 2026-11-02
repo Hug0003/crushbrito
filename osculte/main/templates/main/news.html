@@ -45,7 +45,7 @@
                     {% if user.username == "hugo" %}
                         <form method="post" action="{% url 'delete_news' review.pk %}">
                         {% csrf_token %}
-                        <a class="delete" href="{% url 'delete_news' review.pk %}">supprimer</a>
+                        <button class="delete" type="submit" style="background:none;border:0;padding:0;font:inherit;cursor:pointer">supprimer</button>
                         </form>
                     {% endif %}
                 </div>

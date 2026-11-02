@@ -4,11 +4,13 @@ from accounts.forms import CustomUserCreationForm
 
 from accounts.models import CustomUser
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.http import require_POST
 import random
 from .models import Review, Message, BoiteDeReception,envoyer_message
 from .forms import MessageForm
 from django.db.models import Q
 from django.db.models import Max
+import re
 
 
 
@@ -21,9 +23,11 @@ def index(request):
 @login_required
 def all_users(request):
     if request.method == 'POST':
-        recipient_id = request.POST.get('recipient_id')  # Récupérez l'ID du destinataire depuis le formulaire
-        # Redirigez l'utilisateur vers la page d'envoi de message avec le recipient_id
-        return redirect('envoyer_message', recipient_id=recipient_id)
+        recipient_id = request.POST.get('recipient_id', '')  # Récupérez l'ID du destinataire depuis le formulaire
+        if not recipient_id.isdigit():
+            return redirect('all_users')
+        # Redirigez l'utilisateur vers la conversation avec le destinataire
+        return redirect('conversation', recipient_id=int(recipient_id))
     else:
         users = list(CustomUser.objects.exclude(id=request.user.id))
         random.shuffle(users)  # Exclure l'utilisateur connecté
@@ -38,17 +42,22 @@ def news(request):
 def ajouter_news(request):
     if request.method == "POST":
         bio = request.POST.get('bio')
-        color = request.POST.get("color")
+        color = request.POST.get("color", "")
+        # La couleur est insérée dans un attribut HTML : seule une couleur #rrggbb est acceptée.
+        if not re.fullmatch(r"#[0-9a-fA-F]{6}", color):
+            color = "#000000"
         user = request.user
         Review.objects.create(user=user, bio=bio, color=color)
         return redirect('news')
     return render(request, "main/ajouter_news.html")
 
 # La vue pour supprimer un message (bio).
+# POST uniquement : un simple lien piégé (GET) ne peut pas déclencher de suppression.
 @login_required
+@require_POST
 def delete_news(request, pk):
-    review = Review.objects.get(pk=pk)
-    
+    review = get_object_or_404(Review, pk=pk)
+
     # Vérifie si l'utilisateur actuel est le propriétaire du message avant de supprimer.
     if review.user == request.user:
         review.bio = ""
@@ -59,8 +68,9 @@ def delete_news(request, pk):
 
 
 @login_required
+@require_POST
 def delete_message(request, pk):
-    message = Message.objects.get(pk=pk)
+    message = get_object_or_404(Message, pk=pk)
     
     # Vérifie si l'utilisateur actuel est le propriétaire du message avant de supprimer.
     if message.user == request.user:
@@ -74,19 +84,20 @@ def delete_message(request, pk):
 
 
 
-login_required
+@login_required
+@require_POST
 def delete_conversation(request, pk):
     # Récupérer le message à supprimer
-    message = envoyer_message.objects.get(pk=pk)
-    
+    message = get_object_or_404(envoyer_message, pk=pk)
+
     # Vérifier si l'utilisateur actuel est le propriétaire du message avant de supprimer.
     if message.sender == request.user:
         # Effacer le contenu du message
         message.content = ""
         message.save()
-    
-    # Rediriger vers la vue 'conversation' avec l'argument 'recipient_id'
-    return redirect('conversation', kwargs={'sender_id': message.sender.id})
+
+    # Rediriger vers la conversation avec le destinataire du message
+    return redirect('conversation', recipient_id=message.recipient.id)
 
 
 
@@ -96,7 +107,7 @@ def delete_conversation(request, pk):
 
 @login_required
 def profil(request, user_id):
-    user = CustomUser.objects.get(id=user_id)
+    user = get_object_or_404(CustomUser, id=user_id)
     return render(request, 'main/profil.html', {'user': user})
 
 

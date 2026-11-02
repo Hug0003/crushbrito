@@ -14,6 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import os
 from django.contrib import admin
 from django.urls import path
 from accounts.views import signup, logout_user, login_user, delete_account
@@ -23,7 +24,8 @@ from main.views import index, all_users, news, ajouter_news, delete_news, messag
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # Adresse de l'admin non devinable en production (variable DJANGO_ADMIN_PATH).
+    path(os.environ.get("DJANGO_ADMIN_PATH") or "admin/", admin.site.urls),
     path('', index, name="index"),
 
     path('news/', news, name='news'),
