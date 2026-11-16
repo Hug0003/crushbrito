@@ -1,6 +1,6 @@
 # Appli Django : gunicorn, sans privilèges root. Les fichiers statiques et media sont
 # servis par le conteneur Nginx voisin (voir docker-compose.yml de sites-infra).
-FROM python:3.13-slim
+FROM python:3.15-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
